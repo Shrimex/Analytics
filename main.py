@@ -8,7 +8,8 @@ data.drop('Unnamed: 0', axis=1, inplace=True)#удалили 1 столбик
 
 sns.countplot(data=data, x='Family')#столбчатая диаграмма
 plt.title("Количество семейств языков")
-plt.xticks(rotation=90)#повернули подписи по оси х на 90 градусов
+#
+plt.xticks(rotation=180)#повернули подписи по оси х на 90 градусов
 plt.show()
 
 data.Branch.value_counts().plot(kind='pie', figsize=(18,10),autopct='%0.1f%%')#По стобику Branch строим пироговую диаграмму
