@@ -34,7 +34,7 @@ topfirstlanguage = data[['Language', 'First-language(L1) speakers']].copy()#со
 topfirstlanguage=topfirstlanguage.head(5)#берем первые 5 значений
 
 plt.figure(figsize=(18,12))
-graph=sns.barplot(y='First-language(L1) speakers',x='Language',data=topfirstlanguage, color="Orange")
+graph=sns.barplot(y='First-language(L1) speakers',x='Language',data=topfirstlanguage, color="Green")
 graph.set_title('Топ 5 первых языков')
 plt.xticks(rotation=90)
 plt.show()
