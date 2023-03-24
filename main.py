@@ -20,7 +20,7 @@ plt.show()
 toplanguages = data[['Language', 'Total speakers(L1+L2)']].copy()#создаем копию данных, чтобы по ним посторить график
 toplanguages["Total speakers(L1+L2)"] = toplanguages["Total speakers(L1+L2)"].replace({"billion":"*1e9", "million":"*1e6"}, regex=True).map(pd.eval).astype(int)#заменяем текстовые названия величин на числа типа инт
 top_speakers = toplanguages.head(20)#берем первые 20 значений
-
+#Stash
 plt.figure(figsize=(18,12))
 graph=sns.barplot(y='Total speakers(L1+L2)',x='Language',data=top_speakers, color="Purple")#строим столбчатую диаграмму из библиотеки seaborn
 graph.set_title('Топ 20 языков по количеству носителей')
