@@ -23,7 +23,7 @@ top_speakers = toplanguages.head(20)#берем первые 20 значений
 #Stash
 plt.figure(figsize=(18,12))
 graph=sns.barplot(y='Total speakers(L1+L2)',x='Language',data=top_speakers, color="Purple")#строим столбчатую диаграмму из библиотеки seaborn
-graph.set_title('Топ 20 языков по количеству носителей')
+graph.set_title('Топ 20 языков по количествуууууу носителей')
 plt.xticks(rotation=90)
 plt.show()
 
